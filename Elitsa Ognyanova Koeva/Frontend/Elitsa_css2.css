@@ -17,6 +17,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
     backdrop-filter: blur(1rem);
     box-shadow: 0 10px 0.6rem rgba(0, 255, 136, 0.1);
 }
@@ -123,6 +124,13 @@ p {
     animation: glow 1.5s infinite alternate;
     
 }
+.welcome-section p {
+    text-shadow: 0 0 30px #00ff88;
+    text-align: center;
+    margin-top: -10rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
 .background-image {
     position: absolute;
     top: 0;
@@ -157,4 +165,95 @@ p {
 .shop-now-btn:hover {
     background-color: transparent;
     color: #00ff88;
-}        
+}
+
+section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 3rem #00ff88;
+}
+
+
+.featured-games {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 0.1vh solid #00ff88;
+    box-shadow: 0 0 5px #00ff88;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    border:none;
+    box-shadow: 0 0 30px #00ff88;
+}
+.game-card:hover img {
+    filter: brightness(2);
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 1.5rem;
+}
+
+.game-info h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: #00ff88;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 30px #00ff88;
+}
+
+.buy-btn {
+    background-color: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.buy-btn:hover {
+    background-color: transparent;
+    color: #00ff88;
+    box-shadow: 0 0 15px #00ff88;
+}
