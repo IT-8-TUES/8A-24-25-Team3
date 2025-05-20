@@ -113,16 +113,6 @@ nav {
     background-color: transparent;
     color: #00ff88;
     box-shadow: 0 0 0.6rem #00ff88;
-    }
-p {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 100px;
-    color: #00ff88;
-    text-shadow: 0 0 30px #00ff88;
-    animation: glow 1.5s infinite alternate;
-    
 }
 .welcome-section p {
     text-shadow: 0 0 30px #00ff88;
@@ -130,6 +120,8 @@ p {
     margin-top: -10rem;
     font-size: 4rem;
     margin-bottom: 2rem;
+    font-weight: bold;
+    color: #00ff88;
 }
 .background-image {
     position: absolute;
@@ -228,6 +220,7 @@ section {
     color: #ffffff;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 30px #ffffff;
 }
 
 .price {
@@ -257,3 +250,36 @@ section {
     color: #00ff88;
     box-shadow: 0 0 15px #00ff88;
 }
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.footer-section {
+    flex: 1;
+    padding: 0 2rem;
+    text-align: center;
+}
+.footer-section h3 {
+    color: #00ff88;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px #00ff88;
+}
+.footer-section p {
+    color: #ffffff;
+    text-shadow: 0 0 30px #ffffff;
+}
+.right-section {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.right-section p {
+    color: #ffffff;
+    text-shadow: 0 0 30px #ffffff;
+    margin: 0;
+}
+
