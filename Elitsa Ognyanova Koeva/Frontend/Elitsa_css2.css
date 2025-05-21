@@ -364,6 +364,7 @@ section {
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 1rem;
     width: 100%;
+    color: #00ff88;
     transition: all 0.3s;
     box-shadow: 0 0 0.5rem #00ff88;
 }
