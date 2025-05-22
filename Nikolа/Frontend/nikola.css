@@ -12,17 +12,35 @@ body {
 }
 
 section {
-    padding: 6rem 2rem;
+    padding: 6rem 3rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-shadow: 0 0 30px #00ff88;
+    margin-bottom: 5rem;
 }
 
+.desc {
+    padding-left: 3rem; 
+    padding-right: 3rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px #00ff88;
+    border-radius: 20px;
+}
 
+.subdesc {
+    max-width: 800px;
+}
 
-
+.main p, div {
+    text-shadow: 0 0 3rem #ffffff;
+}
 
 
 
@@ -161,6 +179,7 @@ nav {
     margin-bottom: 2rem;
     font-weight: bold;
     color: #00ff88;
+    border: none;
 }
 
 .about-us-info {
@@ -169,6 +188,10 @@ nav {
     font-size: 4rem;
     margin-bottom: 0.5rem;
     text-shadow: 0 0 30px #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
 }
 
 .background-image {
@@ -236,12 +259,32 @@ nav {
 
 .about-title {
     font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 3rem #ffffff;
+    margin-bottom: 5rem;
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin-bottom: 5rem;
 }
 
+.pros {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pros-title {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.emoji {
+    margin-right: 0.5rem;
+    text-shadow: none;
+}
 
 
 
@@ -348,12 +391,6 @@ nav {
 }
 
 /*<- Elitsa Koeva's code*/
-
-
-
-
-
-
 
 
 
