@@ -14,3 +14,12 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+const btnElList = document.querySelectorAll('.emoji');
+
+btnElList.forEach(btnEl => {
+  btnEl.addEventListener('click', () => {
+    document.querySelector('.special')?.classList.remove('special');
+    btnEl.classList.add('special');
+  });
+});
