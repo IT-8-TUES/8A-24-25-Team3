@@ -1,0 +1,94 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 8rem auto 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px #00ff88;
+    border: 0.1vh solid #00ff88;
+}
+.welcome-section {
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+.welcome-section h1 {
+    color: #00ff88;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px #00ff88;
+}
+.welcome-section p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-shadow: 0 0 30px #ffffff;
+}
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.dashboard-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+    border: 0.1vh solid #00ff88;
+    transition: transform 0.3s;
+}
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #00ff88;
+}
+.dashboard-card h3 {
+    color: #00ff88;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px #00ff88;
+}
+.dashboard-card p, .dashboard-card li {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 30px #ffffff;
+}
+.dashboard-card a {
+    color: #00ff88;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-shadow: 0 0 30px #00ff88;
+}
+.dashboard-card a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 30px #ffffff;
+}
+.dashboard-card ul {
+    list-style: none;
+    padding: 0;
+}
+.dashboard-card li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logout-btn {
+    background-color: #00ff88;
+    color: #000000;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 6rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 0 30px #00ff88;
+}
+.logout-btn h3 {
+    color: #000000;
+}
+
+.logout-btn:hover {
+    background-color: transparent;
+    color: #00ff88;
+    box-shadow: 0 0 30px #00ff88;
+}

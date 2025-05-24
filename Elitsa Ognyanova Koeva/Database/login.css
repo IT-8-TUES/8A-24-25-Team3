@@ -1,0 +1,125 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-shadow: 0 0 3rem #00ff88;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem #00ff88;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #00ff88;
+    text-shadow: 0 0 1rem #00ff88;
+    font-weight: bold;
+}
+
+.login-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-content form input {
+    width: 100%;    
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #161616;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 1rem #161616;
+    transition: all 0.3s ease;
+    color: #00ff88;
+}
+
+.login-content form input:focus {
+    outline: none;
+    background-color: #000000;
+    color: #00ff88;
+    box-shadow: 0 0 1rem #00ff88;
+}
+
+.login-content form input::placeholder {
+    color: #00ff88;
+    opacity: 0.7;
+}
+
+.login-content form button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #00ff88;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 1rem #00ff88;
+}
+
+.login-content form button:hover {
+    background-color: transparent;
+    color: #00ff88;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 1rem #00ff88;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.remember-me input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0;
+    accent-color: #00ff88;
+}
+
+.remember-me label {
+    color: #00ff88;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.flash-messages {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.flash-messages .error {
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff4444;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+
+
+
