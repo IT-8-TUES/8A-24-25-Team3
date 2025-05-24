@@ -6,26 +6,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
 
-    // Validate input
+    //checks if fields are empty
     if (empty($username) || empty($password)) {
         $_SESSION['error'] = "All fields are required";
         header("Location: login.php");
         exit();
     }
 
-    // Check user credentials
-    try {
-        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
-        $stmt->execute([$username]);
-        $user = $stmt->fetch();
+    //checks user credentials
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+    if ($stmt) {
+        $stmt->bind_param('s', $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $user = $result->fetch_assoc();
 
         if ($user && password_verify($password, $user['password_hash'])) {
-            // Set session variables
+            //sets session variables
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $user['email'];
             
-            // Redirect to dashboard
+            //redirects to dashboard
             header("Location: dashboard.php");
             exit();
         } else {
@@ -33,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: login.php");
             exit();
         }
-    } catch(PDOException $e) {
-        $_SESSION['error'] = "Login failed: " . $e->getMessage();
+    } else {
+        $_SESSION['error'] = "Login failed: " . $conn->error;
         header("Location: login.php");
         exit();
     }

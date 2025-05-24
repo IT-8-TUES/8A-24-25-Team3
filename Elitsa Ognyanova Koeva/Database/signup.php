@@ -56,7 +56,7 @@
                 <p>Phone: 123-456-7890</p>
                 <p>Address: Sofia, Bulgaria</p>
            </div>
-           <div class = "right-section">
+           <div class="right-section">
                 <p>All rights reserved &copy; 2025 Game$hop</p>
             </div>
         </div>

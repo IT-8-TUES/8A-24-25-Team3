@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard - Game$hop</title>
-    <link rel="stylesheet" href="../Frontend/Elitsa_css2.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="user_home.css">
+    <link rel="stylesheet" href="/gameshop/Elitsa Ognyanova Koeva/Database/dashboard.css?v=1">
 </head>
 <body>
     <?php
@@ -20,12 +20,13 @@
     <header>
         <nav>
             <div class="nav-content">
-                <a href="../Frontend/Elitsa_html1.html" class="logo">Game$hop</a>
+                <a href="user_home.html" class="logo">Game$hop</a>
                 <div class="nav-links">
-                    <a href="../Frontend/Elitsa_html1.html">Home</a>
+                    <a href="user_home.html">Home</a>
                     <a href="../../Zhivko/frontend/zhivkoHTML.html">Games</a>
                     <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Categories</a>
                     <a href="../../Nikolа/Frontend/nikola.html">About</a>
+                    <a href="dashboard.php">Profile</a>
                 </div>
                 <div class="nav-buttons">
                     <a href="logout.php" class="nav-btn">Log Out</a>
@@ -36,8 +37,7 @@
 
     <div class="dashboard-container">
         <div class="welcome-section">
-            <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username'] ?? 'User'); ?>!</h1>
-            <p>Manage your account and explore our gaming world</p>
+            <h1>Welcome to Game$hop, <span><?php echo htmlspecialchars($_SESSION['username'] ?? 'User'); ?></span>!</h1>
         </div>
 
         <div class="dashboard-grid">
@@ -48,11 +48,9 @@
             </div>
 
             <div class="dashboard-card">
-                <h3>Quick Links</h3>
+                <h3>Profile Picture</h3>
                 <ul>
-                    <li><a href="../../Zhivko/frontend/zhivkoHTML.html">Browse Games</a></li>
-                    <li><a href="../../Zhivko/frontend/zhivkoHTML-2.html">View Categories</a></li>
-                    <li><a href="../../Nikolа/Frontend/nikola.html">About Us</a></li>
+                    <li><a href="edit_profile.php">Edit Profile</a></li>
                 </ul>
             </div>
 

@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+   
+}
+
+nav {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 10px 0.6rem rgba(0, 255, 136, 0.1);
+}
+
+.nav-content {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00ff88;
+    text-decoration: none;
+    letter-spacing: 0.06rem;
+    transition: color 0.3s;
+    text-shadow: 0 0 3rem #00ff88;
+}
+
+.logo:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3rem #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    text-shadow: 0 0 3rem #ffffff;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background-color: #00ff88;
+    transition: width 0.3s;
+        
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background-color: transparent;
+    color: #00ff88;
+    border: none;
+    box-shadow: 0 0 0.6rem #00ff88;
+    padding: 0.5rem 1rem;
+    border-radius: 6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    text-shadow: 0 0 0.6rem #00ff88;
+    text-decoration: none;
+}
+.nav-btn:hover {
+    background-color: #00ff88;
+    color: #0a0a0a;
+}
+
+.nav-btn.primary {
+    background-color: #00ff88;
+    color: #0a0a0a;
+    box-shadow: 0 0 0.6rem #00ff88;
+}
+
+.nav-btn.primary:hover {
+    background-color: transparent;
+    color: #00ff88;
+    box-shadow: 0 0 0.6rem #00ff88;
+}
+.welcome-section p {
+    text-shadow: 0 0 3rem #00ff88;
+    text-align: center;
+    margin-top: -10rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #00ff88;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shop-now-btn{
+    padding: 1rem 2rem;
+    border-radius: 6rem;
+    border: none;
+    background-color: #00ff88;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 0 3rem #000000;
+    animation: glow 1.5s infinite alternate;
+    box-shadow: 0 0 3rem #00ff88;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: glow 1.5s infinite alternate;
+}
+.shop-now-btn:hover {
+    background-color: transparent;
+    color: #00ff88;
+}
+
+section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 3rem #00ff88;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #00ff88;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 3rem #00ff88;
+}
+
+
+.featured-games {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 0.1vh solid #00ff88;
+    box-shadow: 0 0 0.5rem #00ff88;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    border:none;
+    box-shadow: 0 0 3rem #00ff88;
+}
+.game-card:hover img {
+    filter: brightness(2);
+}
+
+.game-card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.game-info {
+    padding: 1.5rem;
+}
+
+.game-info h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 3rem #ffffff;
+}
+
+.price {
+    color: #00ff88;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 3rem #00ff88;
+}
+
+.buy-btn {
+    background-color: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+ 
+.buy-btn:hover {
+    background-color: transparent;
+    color: #00ff88;
+    box-shadow: 0 0 1.5rem #00ff88;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+.footer-section {
+    flex: 1;
+    padding: 0 2rem;
+    text-align: center;
+}
+.footer-section h3 {
+    color: #00ff88;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 3rem #00ff88;
+}
+.footer-section p {
+    color: #ffffff;
+    text-shadow: 0 0 3rem #ffffff;
+}
+.right-section {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+.right-section p {
+    color: #ffffff;
+    text-shadow: 0 0 3rem #ffffff;
+    margin: 0;
+}
+.categories-section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 3rem #00ff88;
+}
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.category-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 0.1vh solid #00ff88;
+    box-shadow: 0 0 0.5rem #00ff88;
+}
+.category-card:hover {
+    transform: translateY(-10px);
+    border: none;
+    box-shadow: 0 0 3rem #00ff88;
+}
+.category-card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.category-card:hover img {
+    filter: brightness(1.5);
+}
+.category-card h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 3rem #ffffff;
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+.category-card p {
+    color: #00ff88;
+    text-shadow: 0 0 6rem #00ff88;
+    padding: 0 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-section {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3rem #00ff88;
+}
+
+.newsletter-section .section-title {
+    margin-bottom: 4rem;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 50rem;
+    width: 100%;
+}
+
+.newsletter-form input {
+    padding: 1rem 2rem;
+    border-radius: 6rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+    width: 100%;
+    color: #00ff88;
+    transition: all 0.3s;
+    box-shadow: 0 0 0.5rem #00ff88;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    box-shadow: 0 0 2rem #00ff88;
+}
+
+.newsletter-form input::placeholder {
+    color: #00ff88;
+    text-shadow: 0 0 1rem #00ff88;
+}
+
+.newsletter-form .nav-btn {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 1rem #00ff88;
+}
+
+.newsletter-form .nav-btn:hover {
+    background-color: #00ff88;
+    color: #000000;
+    box-shadow: 0 0 2rem #00ff88;
+    text-shadow: 0 0 2rem #000000;
+}
+
+.see-more-btn {
+    background-color: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6rem;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+    margin: 4rem auto 1rem;
+    max-width: 12rem;
+    box-shadow: 0 0 3rem #00ff88;
+    display: block;
+}
+
+.see-more-btn:hover {
+    background-color: transparent;
+    color: #00ff88;
+    box-shadow: 0 0 1.5rem #00ff88;
+}
+
+.see-more-btn a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.see-more-btn a:hover {
+    color: #00ff88;
+}   
+
+

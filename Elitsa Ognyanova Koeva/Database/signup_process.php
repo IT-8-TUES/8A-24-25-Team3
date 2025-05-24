@@ -7,38 +7,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 
-    // Validate input
-    if (empty($username) || empty($email) || empty($password)) {
-        $_SESSION['error'] = "All fields are required";
-        header("Location: signup.php");
-        exit();
-    }
-
-    // Check if username or email already exists
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
-    $stmt->execute([$username, $email]);
     
-    if ($stmt->rowCount() > 0) {
-        $_SESSION['error'] = "Username or email already exists";
+    if (empty($username) || empty($email) || empty($password)) {
+        $_SESSION['error'] = "All fields are required.";
         header("Location: signup.php");
         exit();
     }
 
-    // Hash password
+    // checks if user already exists
+    $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
+    $stmt->bind_param("ss", $username, $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $_SESSION['error'] = "Username or email already exists.";
+        header("Location: signup.php");
+        exit();
+    }
+
+    //hashes the password
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-    // Insert new user
-    try {
-        $stmt = $pdo->prepare("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)");
-        $stmt->execute([$username, $email, $password_hash]);
-        
-        $_SESSION['success'] = "Registration successful! Please login.";
-        header("Location: login.php");
-        exit();
-    } catch(PDOException $e) {
-        $_SESSION['error'] = "Registration failed: " . $e->getMessage();
+    //inserts the user into the database
+    $stmt = $conn->prepare("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $username, $email, $password_hash);
+
+    if ($stmt->execute()) {
+        $_SESSION['success'] = "User  registered successfully!";
+        header("Location: login.php"); // Redirect to login page after successful signup
+    } else {
+        $_SESSION['error'] = "Error registering user.";
         header("Location: signup.php");
-        exit();
     }
+
+    $stmt->close();
+    $conn->close();
 }
-?> 
+?>
