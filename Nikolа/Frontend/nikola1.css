@@ -253,6 +253,8 @@ input[type=text]:placeholder-shown, textarea[type=submit]:placeholder-shown {
     text-shadow: 0 0 0.6rem #00ff88;
     width: 50%;
     margin-top: 3rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .submit-button:hover {
@@ -261,7 +263,9 @@ input[type=text]:placeholder-shown, textarea[type=submit]:placeholder-shown {
     box-shadow: 0 0 0.6rem #00ff88;
 }
 
-
+.link {
+    width: 100%;
+}
 
 
 

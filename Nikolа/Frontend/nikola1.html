@@ -48,20 +48,20 @@
 
 
 <main>
-  <section class="form">
+  <section class="form" action="/" method="GET">
     <div class="rate-us">Rate us: </div>
     <div class="rate-us-desc-title">Got a minute?</div>
     <div class="rate-us-desc">We&#x2019;d really appreciate it if you could rate our website. Your feedback helps us improve!</div>
 
     <form class="rate-us-form">
       <label>First Name*</label>
-      <input type="text" name="firstname" placeholder="Your name" required>
+      <input type="text" name="firstname" placeholder="Your name">
     
       <label>Last Name*</label>
-      <input type="text" name="lastname" placeholder="Your last name" required>
+      <input type="text" name="lastname" placeholder="Your last name">
     
       <label>E-mail*</label>
-      <input type="text" name="Email Address" placeholder="example@domain.com" required>
+      <input type="text" name="Email Address" placeholder="example@domain.com">
 
       <label>Subject <span style="font-size: 0.8rem;">(word limit: 279)</span></label>
       <textarea maxlength="279" type="submit" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -77,9 +77,7 @@
         <div class="emoji">&#x1F620;</div>
       </div>
 
-      <a href="nikola2.html">
-        <button class="submit-button">Submit</button>
-      </a>
+      <a href="nikola2.html" class="submit-button">Submit</a>
     </form>
   </section>
   <button onclick="topFunction()" id="scroll-to-top" class="scroll-to-top-button" title="Scroll to top">&#11165;</button>
