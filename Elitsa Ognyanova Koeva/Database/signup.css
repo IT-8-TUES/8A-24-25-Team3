@@ -18,7 +18,7 @@
     border-radius: 1rem;
     box-shadow: 0 0 3rem #00ff88;
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .signup-content h1 {
@@ -95,7 +95,7 @@
 
 .flash-messages .error {
     color: #ff4444;
-    text-shadow: 0 0 10px #ff4444;
+    text-shadow: 0 0 0.5rem #ff4444;
     margin: 0.5rem 0;
     font-size: 1rem;
 }
@@ -103,24 +103,24 @@
 .error-message {
     background-color: #ffebee;
     color: #c62828;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    padding: 0.6rem;
+    border-radius: 0.04rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .success-message {
     background-color: #e8f5e9;
     color: #2e7d32;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    padding: 0.6rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
 .login-link, .signup-link {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1rem;
 }
 
 .login-link a, .signup-link a {

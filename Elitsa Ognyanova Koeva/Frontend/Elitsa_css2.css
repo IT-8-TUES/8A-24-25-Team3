@@ -19,7 +19,7 @@ nav {
     top: 0;
     z-index: 100;
     backdrop-filter: blur(1rem);
-    box-shadow: 0 10px 0.6rem rgba(0, 255, 136, 0.1);
+    box-shadow: 0 0.6rem 0.6rem rgba(0, 255, 136, 0.1);
 }
 
 .nav-content {
@@ -183,7 +183,7 @@ section {
 
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
     gap: 2rem;
     max-width: 75rem;
     margin: 0 auto;
@@ -199,7 +199,7 @@ section {
 }
 
 .game-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
     border:none;
     box-shadow: 0 0 3rem #00ff88;
 }
@@ -296,7 +296,7 @@ section {
 }
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
     gap: 2rem;
     max-width: 75rem;
     margin: 0 auto;
@@ -310,7 +310,7 @@ section {
     box-shadow: 0 0 0.5rem #00ff88;
 }
 .category-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
     border: none;
     box-shadow: 0 0 3rem #00ff88;
 }

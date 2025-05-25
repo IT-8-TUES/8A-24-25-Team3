@@ -1,10 +1,10 @@
 .dashboard-container {
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 8rem auto 2rem;
     padding: 2rem;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 1rem;
-    box-shadow: 0 0 30px #00ff88;
+    box-shadow: 0 0 1.5rem #00ff88;
     border: 0.1vh solid #00ff88;
 }
 .welcome-section {
@@ -25,7 +25,7 @@
 
 .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -38,7 +38,7 @@
     transition: transform 0.3s;
 }
 .dashboard-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5rem);
     box-shadow: 0 0 3rem #00ff88;
 }
 .dashboard-card h3 {
@@ -89,5 +89,5 @@
 .logout-btn:hover {
     background-color: #00ff88;
     color: #000000 !important;
-    box-shadow: 0 0 30px #00ff88;
+    box-shadow: 0 0 3rem #00ff88;
 }

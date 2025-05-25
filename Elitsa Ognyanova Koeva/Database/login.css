@@ -17,7 +17,7 @@
     border-radius: 1rem;
     box-shadow: 0 0 3rem #00ff88;
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
 }
 
 .login-content h1 {
@@ -115,7 +115,7 @@
 
 .flash-messages .error {
     color: #ff4444;
-    text-shadow: 0 0 10px #ff4444;
+    text-shadow: 0 0 0.5rem #ff4444;
     margin: 0.5rem 0;
     font-size: 1rem;
 }
