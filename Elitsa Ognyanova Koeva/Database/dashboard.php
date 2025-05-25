@@ -25,11 +25,11 @@
                 <a href="user_home.html" class="logo">Game$hop</a>
                 <div class="nav-links">
                     <a href="user_home.html">Home</a>
-                    <a href="../../Zhivko/frontend/zhivkoHTML.html">Games</a>
-                    <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Categories</a>
-                    <a href="../../Nikolа/Frontend/nikola.html">About</a>
-                    <a href="../../Nikolа/Frontend/nikola1.html">Feedback</a>
-                    <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Shopping Cart</a>
+                    <a href="../../Zhivko/frontend/user_games.html">Games</a>
+                    <a href="user_home.html#categories">Categories</a>
+                    <a href="user_about.html">About</a>
+                    <a href="user_feedback.html">Feedback</a>
+                    <a href="../../Nikolа/Frontend/shopping-cart.html">Shopping Cart</a>
                     <a href="dashboard.php">Profile</a>
                 </div>
                 <div class="nav-buttons">
