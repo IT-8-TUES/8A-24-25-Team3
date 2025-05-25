@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="zhivkoStyle.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game$hop</title>
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="nav-content">
+            <a href="../../Elitsa Ognyanova Koeva/Frontend/Elitsa_html1.html" class="logo">Game$hop</a>
+            <div class="nav-links">
+                <a href="../../Elitsa Ognyanova Koeva/Frontend/Elitsa_html1.html">Home</a>
+                <a href="#games">Games</a>
+                <a href="#categories">Categories</a>
+                <a href="../../Nikolа/Frontend/nikola.html">About</a>
+                <a href="../../Nikolа/Frontend/nikola1.html">Feedback</a>
+                <a href="../../Nikolа/Frontend/shopping-cart.html">Shopping cart</a>
+                <a href="../../Elitsa Ognyanova Koeva/Database/dashboard.php">Profile</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="../../Elitsa Ognyanova Koeva/Database/logout.php"></a><button class="nav-btn">Log Out</button></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main>
+
+    <section class="sort-section">
+        <button onclick="
+            render()" class="all-nav-btn">All</button>
+        <button onclick="
+            filter('Action')" class="nav-btn">Action</button>
+        <button onclick="
+            filter('Adventure')" class="nav-btn">Adventure</button>
+        <button onclick="
+            filter('Simulator')" class="nav-btn">Simulator</button>
+        <button onclick="
+            filter('RPG games')" class="nav-btn">RPG games</button>
+        <button onclick="
+            filter('Sport')" class="nav-btn">Sport</button>
+        <button onclick="
+            filter('Racing')" class="nav-btn">Racing</button>
+
+    </section>
+    
+
+  <section id="games" class="featured-games">
+      
+      <h2 class="section-title">Games</h2>
+
+      <div class="games-grid">
+
+      </div>
+      
+  </section>
+
+
+  
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@gameshop.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Address: Sofia, Bulgaria</p>
+       </div>
+       <div class = "right-section">
+            <p>All rights reserved &copy; 2025 Game$hop</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="../backend/zhivkoScript.js"></script>
+</body>
+</html>
