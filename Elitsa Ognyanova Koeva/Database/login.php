@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../Frontend/Elitsa_css2.css">
     <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="../../Logo(Nikola)/game-shop-logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -17,10 +18,11 @@
                     <a href="../../Zhivko/frontend/zhivkoHTML.html">Games</a>
                     <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Categories</a>
                     <a href="../../Nikolа/Frontend/nikola.html">About</a>
+                    <a href="../../Nikolа/Frontend/nikola1.html">Feedback</a>
                 </div>
                 <div class="nav-buttons">
-                    <a href="../Database/login.php" class="nav-btn">Log In</a>
-                    <a href="../Database/signup.php" class="nav-btn primary">Sign Up</a>
+                    <a href="../Database/login.php"><button class="nav-btn">Log In</button></a>
+                    <a href="../Database/signup.php"><button class="nav-btn primary">Sign Up</button></a>
                 </div>
             </div>
         </nav>

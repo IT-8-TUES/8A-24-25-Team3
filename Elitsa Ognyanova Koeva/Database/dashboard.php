@@ -6,6 +6,7 @@
     <title>User Dashboard - Game$hop</title>
     <link rel="stylesheet" href="user_home.css">
     <link rel="stylesheet" href="/gameshop/Elitsa Ognyanova Koeva/Database/dashboard.css?v=1">
+    <link rel="icon" href="../../Logo(Nikola)/game-shop-logo.png" type="image/x-icon">
 </head>
 <body>
     <?php
@@ -26,6 +27,8 @@
                     <a href="../../Zhivko/frontend/zhivkoHTML.html">Games</a>
                     <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Categories</a>
                     <a href="../../Nikolа/Frontend/nikola.html">About</a>
+                    <a href="../../Nikolа/Frontend/nikola1.html">Feedback</a>
+                    <a href="../../Zhivko/frontend/zhivkoHTML-2.html">Shopping Cart</a>
                     <a href="dashboard.php">Profile</a>
                 </div>
                 <div class="nav-buttons">

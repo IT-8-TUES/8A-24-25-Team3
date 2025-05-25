@@ -244,12 +244,14 @@ section {
     transition: all 0.3s;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    text-decoration: none;
 }
  
 .buy-btn:hover {
     background-color: transparent;
     color: #00ff88;
     box-shadow: 0 0 1.5rem #00ff88;
+    text-decoration: none;
 }
 .footer-content {
     display: flex;
