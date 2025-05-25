@@ -25,3 +25,47 @@ We used HTML, CSS, JavaScript and PHP
 * Database: PHP, MySQL
 
 
+🧑‍💻 **How to Run**
+
+To run the Game$hop website locally, follow these steps:
+
+1. Clone the repository
+
+
+2. Set Up XAMPP
+
+Download and install XAMPP if you haven't already.
+
+Open the XAMPP Control Panel.
+
+Start the following services:
+
+* Apache (for the PHP server)
+
+* MySQL (for the database)
+
+
+
+2. Set Up the Project Files
+
+Place the project folder (the repository) inside the htdocs directory.
+
+Usually found at: C:\xampp\htdocs\
+
+
+
+3. Set Up the Database
+
+Open your browser and go to:
+http://localhost/phpmyadmin
+
+Click on Import, and upload the gameshop.sql file (database dump) if you have one.
+
+Or manually create a new database and the necessary tables.
+
+
+4. Run the Website
+
+In your browser, go to:
+http://localhost/gameshop
+(replace gameshop with your folder name if it's different)
