@@ -204,13 +204,14 @@ section {
     box-shadow: 0 0 3rem #00ff88;
 }
 .game-card:hover img {
-    filter: brightness(2);
+  filter: brightness(1);
 }
 
 .game-card img {
-    width: 100%;
-    height: 20rem;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: brightness(0,6);
 }
 
 .game-info {
