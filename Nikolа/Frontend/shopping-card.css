@@ -1,0 +1,80 @@
+body {
+  background-color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00ff99;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+    padding: 6rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1.87rem #00ff88;
+    margin-bottom: 5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 62.5rem;
+  margin: 2.5rem auto;
+  background: #111;
+  border: 0.1rem solid #00ff99;
+  box-shadow: 0 0 1.3rem #00ff99;
+  padding: 1.3rem;
+  border-radius: 0.6rem;
+}
+
+h1 {
+  text-align: center;
+  color: #00ff99;
+  text-shadow: 0 0 0.6rem #0f0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 0.9rem;
+  margin: 0.6rem 0;
+  border: 0.1rem solid #00ff99;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.6rem #00ff99;
+}
+
+button {
+  background: #00ff99;
+  border: none;
+  color: #000;
+  padding: 0.6rem 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem #00ff99;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+.cart {
+  margin-top: 1.9rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  background: #111;
+  border-bottom: 0.1rem solid #00ff99;
+}
+
+.total {
+  text-align: right;
+  margin-top: 0.9rem;
+  font-size: 1.2em;
+}
