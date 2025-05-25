@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Frontend/Elitsa_css2.css">
     <link rel="stylesheet" href="signup.css">
     <link rel="icon" href="../../Logo(Nikola)/game-shop-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Nikolа/Frontend/scroll-to-top.css">
 </head>
 <body>
     <header>
@@ -27,6 +28,7 @@
             </div>
         </nav>
     </header>
+    <button onclick="topFunction()" id="scroll-to-top" class="scroll-to-top-button" title="Scroll to top">&#11165;</button>
     <div class="signup-container">
         <div class="signup-content">
             <h1>Login</h1>
@@ -62,5 +64,6 @@
             </div>
         </div>
     </footer>
+    <script src="../Backend/scroll-to-top.js"></script>
 </body>
 </html>

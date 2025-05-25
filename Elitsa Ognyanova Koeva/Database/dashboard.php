@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="user_home.css">
     <link rel="stylesheet" href="/gameshop/Elitsa Ognyanova Koeva/Database/dashboard.css?v=1">
     <link rel="icon" href="../../Logo(Nikola)/game-shop-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Nikolа/Frontend/scroll-to-top.css">
 </head>
 <body>
     <?php
@@ -37,7 +38,7 @@
             </div>
         </nav>
     </header>
-
+    <button onclick="topFunction()" id="scroll-to-top" class="scroll-to-top-button" title="Scroll to top">&#11165;</button>
     <div class="dashboard-container">
         <div class="welcome-section">
             <h1>Welcome to Game$hop, <span><?php echo htmlspecialchars($_SESSION['username'] ?? 'User'); ?></span>!</h1>
@@ -77,5 +78,6 @@
             </div>
         </div>
     </footer>
+    <script src="../Backend/scroll-to-top.js"></script>
 </body>
 </html> 
